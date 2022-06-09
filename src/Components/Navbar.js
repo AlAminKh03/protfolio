@@ -9,6 +9,7 @@ import {
     FaFacebook,
     FaLinkedinIn,
 } from 'react-icons/fa';
+import { Link } from 'react-scroll'
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useState } from 'react';
 
@@ -23,11 +24,26 @@ const Navbar = () => {
             {/* menu  */}
             <div>
                 <ul className='hidden md:flex'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link to='home' smooth={true} duration={500}>
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+
+                        <Link to='about' smooth={true} duration={500}>About
+                        </Link></li>
+                    <li>
+                        <Link to='skills' smooth={true} duration={500}>
+                            Skills
+                        </Link></li>
+                    <li>
+                        <Link to='work' smooth={true} duration={500}>
+                            Projects
+                        </Link></li>
+                    <li>
+                        <Link to='contact' smooth={true} duration={500}>Contact
+                        </Link></li>
                 </ul>
             </div>
             {/* hamburger */}
@@ -78,7 +94,7 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            href='https://drive.google.com/file/d/1x4pRPRAsLXEO4_mE6SIhTv1m6v3lo4S6/view?usp=sharing'
                         >
                             Resume <BsFillPersonLinesFill size={30} />
                         </a>

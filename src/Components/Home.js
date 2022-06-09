@@ -19,12 +19,13 @@ const Home = () => {
                 </p>
                 <div>
                     <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-                        View Work
+                        <a href='https://drive.google.com/file/d/1x4pRPRAsLXEO4_mE6SIhTv1m6v3lo4S6/view?usp=sharing' target='_blank'>My Resume</a>
                         <span className='group-hover:rotate-90 duration-300'>
                             <HiArrowNarrowRight className='ml-3 ' />
                         </span>
                     </button>
                 </div>
+
             </div>
 
         </div>

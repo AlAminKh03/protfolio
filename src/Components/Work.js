@@ -28,12 +28,12 @@ const Work = () => {
                                 Home tools
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href='https://home-tools-ee461.web.app/'>
+                                <a href='https://home-tools-ee461.web.app/' target='_blank'>
                                     <button className='text-center rounded-lg px-2 py-2 m-2 bg-white text-gray-700 font-bold text-lg'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='/'>
+                                <a href='https://github.com/AlAminKh03/public-assignment-12' target='_blank'>
                                     <button className='text-center rounded px-2 py-2 m-2 bg-white text-gray-700 font-bold text-lg'>
                                         Code
                                     </button>
