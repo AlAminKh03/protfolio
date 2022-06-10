@@ -1,9 +1,10 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import myself from '../assets/myself2.png'
 
 const Home = () => {
     return (
-        <div name='home' className='w-full h-screen bg-[#0a192f]'>
+        <div name='home' className='w-full h-screen bg-[#0a192f] flex'>
             {/* home cont  */}
             <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
                 <p className='text-pink-600'>Hello, my name is</p>
@@ -18,7 +19,7 @@ const Home = () => {
                     building responsive full-stack web applications.
                 </p>
                 <div>
-                    <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+                    <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 rounded-lg'>
                         <a href='https://drive.google.com/file/d/1x4pRPRAsLXEO4_mE6SIhTv1m6v3lo4S6/view?usp=sharing' target='_blank'>My Resume</a>
                         <span className='group-hover:rotate-90 duration-300'>
                             <HiArrowNarrowRight className='ml-3 ' />
@@ -27,6 +28,10 @@ const Home = () => {
                 </div>
 
             </div>
+            {/* 
+            <div>
+                <img src={myself} alt="my pictue" />
+            </div> */}
 
         </div>
     );
