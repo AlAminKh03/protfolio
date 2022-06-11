@@ -1,22 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Components/Navbar';
-import Home from './Components/Home';
-import About from './Components/About';
-import Skills from './Components/Skills';
-import Work from './Components/Work';
-import Contact from './Components/Contact';
+import { Route, Routes } from 'react-router-dom';
+import ProjectsDetails from './Components/ProjectsDetails';
+import Blogs from './Components/Blogs';
+import Home2 from './Components/Home2';
 
 function App() {
   return (
-    <div>
+
+    <div className='bg-[#0a192f]'>
       <Navbar></Navbar>
-      <Home></Home>
-      <About></About>
-      <Skills></Skills>
-      <Work></Work>
-      <Contact></Contact>
+      <Routes>
+
+        <Route path='/' element={<Home2></Home2>}></Route>
+        <Route path="/projects/:id" element={<ProjectsDetails></ProjectsDetails>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+      </Routes>
     </div>
+
   );
 }
 

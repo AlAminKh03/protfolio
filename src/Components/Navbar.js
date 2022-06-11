@@ -9,15 +9,17 @@ import {
     FaFacebook,
     FaLinkedinIn,
 } from 'react-icons/fa';
-import { Link } from 'react-scroll'
+
+import { Link } from 'react-router-dom';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useState } from 'react';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
+
     return (
-        <div className='fixed w-full h-[50px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[50px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50'>
             <div>
                 <img src={logo} alt="logo" style={{ width: '50px' }} />
             </div>
@@ -25,11 +27,11 @@ const Navbar = () => {
             <div>
                 <ul className='hidden md:flex'>
                     <li>
-                        <Link to='home' smooth={true} duration={500}>
+                        <Link to='/' smooth={true} duration={500}>
                             Home
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
 
                         <Link to='about' smooth={true} duration={500}>About
                         </Link></li>
@@ -40,6 +42,10 @@ const Navbar = () => {
                     <li>
                         <Link to='work' smooth={true} duration={500}>
                             Projects
+                        </Link></li> */}
+                    <li>
+                        <Link to='blogs'>
+                            Blogs
                         </Link></li>
                     <li>
                         <Link to='contact' smooth={true} duration={500}>Contact
@@ -57,13 +63,16 @@ const Navbar = () => {
                     : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
             }>
                 <ul>
-                    <li className='py-6 text-4xl'>Home</li>
+                    <li to="/" className='py-6 text-4xl'>Home</li>
                     <li className='py-6 text-4xl'>About</li>
                     <li className='py-6 text-4xl'>Skills</li>
                     <li className='py-6 text-4xl'>Projects</li>
+                    <li to="/blogs" className='py-6 text-4xl'>Blogs</li>
+
                     <li className='py-6 text-4xl'>Contact</li>
                 </ul>
             </div>
+
             {/* social icon  */}
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
