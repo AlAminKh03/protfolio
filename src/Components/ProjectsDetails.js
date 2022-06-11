@@ -20,9 +20,9 @@ const ProjectDetails = () => {
     }, [projects, id]);
     return (
         <div>
-            <section className='bg-white mt-5'>
-                <h2 className='text-center text-4xl font-bold underline underline-offset-8 decoration-red-500 text-red-500 mb-10'>Project Details</h2>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5' >
+            <section className='bg-white'>
+                <h2 className='text-center text-4xl font-bold underline underline-offset-8 decoration-orange-600 text-orange-600 pt-20 pb-8'>Project Details</h2>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 px-5' >
                     <img className='border rounded shadow' src={img1} alt="" />
                     <img className='border rounded shadow' src={img2} alt="" />
                     <img className='border rounded shadow' src={img3} alt="" />

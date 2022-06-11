@@ -19,14 +19,15 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className='fixed w-full h-[50px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50'>
+        <div className='fixed w-full h-[50px] flex justify-between items-center px-4 bg-[#0a192f]  text-gray-300 z-50 '>
             <div>
+                {/* bg-[#0a192f] */}
                 <img src={logo} alt="logo" style={{ width: '50px' }} />
             </div>
             {/* menu  */}
             <div>
                 <ul className='hidden md:flex'>
-                    <li>
+                    <li className=''>
                         <Link to='/' smooth={true} duration={500}>
                             Home
                         </Link>
@@ -44,12 +45,11 @@ const Navbar = () => {
                             Projects
                         </Link></li> */}
                     <li>
-                        <Link to='blogs'>
-                            Blogs
-                        </Link></li>
-                    <li>
-                        <Link to='contact' smooth={true} duration={500}>Contact
-                        </Link></li>
+                        <Link to="/blog">Blogs</Link>
+                    </li>
+                    {/* <li> */}
+                    {/* <Link to='contact' smooth={true} duration={500}>Contact
+                        </Link></li> */}
                 </ul>
             </div>
             {/* hamburger */}
@@ -64,12 +64,12 @@ const Navbar = () => {
             }>
                 <ul>
                     <li to="/" className='py-6 text-4xl'>Home</li>
-                    <li className='py-6 text-4xl'>About</li>
+                    {/* <li className='py-6 text-4xl'>About</li>
                     <li className='py-6 text-4xl'>Skills</li>
-                    <li className='py-6 text-4xl'>Projects</li>
-                    <li to="/blogs" className='py-6 text-4xl'>Blogs</li>
+                    <li className='py-6 text-4xl'>Projects</li> */}
+                    <li to="/blog" className='py-6 text-4xl'>Blogs</li>
 
-                    <li className='py-6 text-4xl'>Contact</li>
+                    {/* <li className='py-6 text-4xl'>Contact</li> */}
                 </ul>
             </div>
 
